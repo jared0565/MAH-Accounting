@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MAH Chartered Accountants</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background-color: var(--clr-primary-dark);
+            color: var(--clr-background);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">MAH</span>
+                <span class="logo-subtext">Chartered Accountants</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="tel:02071003610" class="btn btn-secondary">Call Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1 class="animate-up">Contact Us</h1>
+                <p class="animate-up delay-1">Get your free, no-obligation consultation.</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container section-container">
+                <!-- Reusing the CTA structure from main index but centering it slightly -->
+                <div class="cta-wrapper scroll-animate animate-fade-up"
+                    style="grid-template-columns: 1fr; max-width: 600px; margin: 0 auto; background: var(--clr-surface); padding: var(--space-8); border-radius: var(--radius-xl);">
+                    <div class="cta-form-container" style="box-shadow: none; background: transparent; padding: 0;">
+                        <form class="lead-capture-form">
+                            <h3 style="text-align: left; font-size: 2rem;">Send us a message</h3>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" placeholder="john@company.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="020..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">How can we help?</label>
+                                <textarea id="message" rows="4"
+                                    style="width:100%; padding:var(--space-3); border:1px solid rgba(0,0,0,0.1); border-radius:var(--radius-md); font-family:var(--font-body); resize:vertical;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section" style="background: var(--clr-surface-dark); color: white;">
+        <div class="container text-center">
+            <p>&copy; 2026 MAH Chartered Accountants. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

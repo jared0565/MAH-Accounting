@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MAH Chartered Accountants</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background-color: var(--clr-primary-light);
+            color: var(--clr-background);
+            text-align: center;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-12);
+            align-items: center;
+            padding: var(--space-12) 0;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .about-img {
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">MAH</span>
+                <span class="logo-subtext">Chartered Accountants</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="contact.html" class="btn btn-primary">Free Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <h1 class="animate-up">About MAH</h1>
+                <p class="animate-up delay-1">City expertise without the high fees.</p>
+            </div>
+        </div>
+
+        <div class="container section-container">
+            <div class="about-content scroll-animate animate-fade-up">
+                <div>
+                    <h2 class="section-title">A personal service in a digital world</h2>
+                    <p>Based near Liverpool Street, we love to meet with clients and give them high-quality advice at
+                        affordable rates. We are experts in our field and specialise in financial services, AIM/AQSE
+                        plcs, tech startups, and contractors.</p>
+                    <p>As a city firm, we offer high-quality expertise without the high fees associated with large
+                        practices, supported by transparent fixed pricing with no unexpected costs.</p>
+                    <a href="contact.html" class="btn btn-secondary" style="margin-top: 20px;">Get in Touch</a>
+                </div>
+                <div>
+                    <!-- Placeholder for office image -->
+                    <div
+                        style="background-color: #eee; width: 100%; aspect-ratio: 4/3; border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: #999;">
+                        [Office Image]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer section">
+        <div class="container text-center">
+            <p>&copy; 2026 MAH Chartered Accountants. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
