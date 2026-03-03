@@ -257,8 +257,15 @@ img {
     font-weight: 600;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-8);
+}
+
 .nav-list {
     display: flex;
+    align-items: center;
     gap: var(--space-8);
 }
 
