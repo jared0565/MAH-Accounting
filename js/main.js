@@ -3,10 +3,10 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- Header Scroll Effect ---
     const header = document.getElementById('header');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
@@ -44,5 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Elements with 'scroll-animate' class will be targeted later
     const animateElements = document.querySelectorAll('.scroll-animate');
     animateElements.forEach(el => scrollObserver.observe(el));
+
+    // --- Load Global Footer Component ---
+    const globalFooterContainer = document.getElementById('global-footer');
+    if (globalFooterContainer) {
+        fetch('components/footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.text();
+            })
+            .then(data => {
+                globalFooterContainer.innerHTML = data;
+            })
+            .catch(error => console.error('Error loading global footer:', error));
+    }
 
 });
