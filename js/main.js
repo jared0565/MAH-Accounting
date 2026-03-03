@@ -16,12 +16,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Mobile Menu Toggle ---
-    // (To be fully implemented)
     const mobileMenuBtn = document.querySelector('.mobile-menu-toggle');
-    if (mobileMenuBtn) {
+    const nav = document.querySelector('.nav');
+    if (mobileMenuBtn && nav) {
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenuBtn.classList.toggle('active');
-            // Toggle nav visibility here
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        const navLinks = document.querySelectorAll('.nav-link, .btn-primary');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                nav.classList.remove('active');
+            });
         });
     }
 
